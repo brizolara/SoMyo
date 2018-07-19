@@ -2,10 +2,10 @@
 
 
 Orientation:
-x: bússola. Cresce no sentido horário até 3. Depois pula para -3 (e continua crecendo) --> (Yaw)
+x: bussola. Cresce no sentido horario ate 3. Depois pula para -3 (e continua crescendo) --> (Yaw)
 y: -1.5 down; 1.5 up; 0.0 horizontal --> (Pitch)
-z: 1.5 (anti-h); 0.0 (horizontal); -1.5 (horário) --> (Roll)
+z: 1.5 (anti-h); 0.0 (horizontal); -1.5 (horario) --> (Roll)
 
 Acceleration:
-x: Projeção no versor gravidade
+x: Projecao no versor gravidade
 y: 

@@ -1,8 +1,8 @@
-#N canvas 625 157 619 473 10;
+#N canvas 625 157 619 606 10;
 #X obj 283 425 dac~;
 #N canvas 84 200 425 355 ezplay 0;
 #X obj -31 141 tabplay~ \$0-sample;
-#X obj 104 142 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 1
+#X obj 104 142 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
 1;
 #X obj 229 219 soundfiler;
 #X msg 229 189 read -resize \$1 \$2-sample;
@@ -41,8 +41,18 @@
 #X coords 0 -1 1 1 90 60 1 100 100;
 #X restore 273 26 pd ezplay;
 #X obj 46 214 grannie-basher;
+#X obj 40 567 writesf~ 2;
+#X msg 161 447 start;
+#X msg 161 470 stop;
+#X msg 161 493 open /Users/brizolara/Documents/teste_SoMyo_24_5_2018
+;
 #X connect 1 0 2 0;
 #X connect 1 0 2 1;
 #X connect 2 0 0 0;
+#X connect 2 0 3 0;
 #X connect 2 1 0 1;
+#X connect 2 1 3 1;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
 #X coords 0 0 1 1 400 140 0;
